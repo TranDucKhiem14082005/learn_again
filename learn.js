@@ -1,0 +1,1 @@
+console.log('xin chao moi nguoi den voi bai hoc ngay hom nay');
