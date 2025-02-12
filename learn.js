@@ -1,44 +1,37 @@
-// console.log('xin chao moi nguoi den voi bai hoc ngay hom nay');
+// git
 
-// function getMoney ({value1,value2}) {
-//     console.log(value1,value2);
+
+// function washCar2() {
+//     return new Promise(resolve => {
+//         console.log("dang rua xe");
+//         setTimeout( () => {
+//                 console.log("xe da rua xong");
+//                 resolve();
+//             },3000
+//         )
+//     });
 // }
 
-// getMoney({
-//     value1: '20000',
-//     value2: '30000'
-// });
+// console.log("Bat dau di rua xe");
 
-// function washCar() {
-//     console.log("Xe dang duoc rua....")
-//     for(let i = 0; i < 5; i++) {
-//         console.log(`dang bat dau rua buoc so ${i}`);
-//     }
-//     console.log("xe da rua xong");
-// }
-
-// console.log("bat dau rua xe");
-
-// washCar();
-
-// console.log("dat xe ve nha");
+// washCar2().then(()=> {
+//     console.log("goi dien cho ong chu");
+//     console.log("Xe da san sang lai ve nha");
+// })
+// console.log("Lam nhung viec khac cho vo");
 
 
-function washCar2() {
-    return new Promise(resolve => {
-        console.log("dang rua xe");
-        setTimeout( () => {
-                console.log("xe da rua xong");
-                resolve();
-            },3000
-        )
-    });
-}
+// console.log('hello world');
 
-console.log("Bat dau di rua xe");
+// JSON là 1 định dạng dữ liệu (Chuỗi)
+/*
+     JSON là 1 định dạng dữ liệu (Chuỗi)
+    JSON là một chuỗi nên nó sẽ được viết trong dấu ngoặc đơn ''
+ */
 
-washCar2().then(()=> {
-    console.log("goi dien cho ong chu");
-    console.log("Xe da san sang lai ve nha");
-})
-console.log("Lam nhung viec khac cho vo");
+// json co thể chứa các kdl như: string, object, array, boolean, null
+// let json = 'true';
+// let json1 = '["JavaScript","PHP"]';
+
+let a = '1'; // 
+console.log(JSON.parse(a));
