@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // class Person {
+    //     constructor(name,age,gender) {
+    //         this.name = name;
+    //         this.age = age;
+    //         this.gender = gender;
+    //     }
+
+    //     talk() {
+    //          console.log("Xin chào mọi người");
+    //     }
+      
+    // }
+
+    // class Person2 extends Person { 
+
+    //     /*
+    //     1. Thừa kế: là con sẽ kế thừa những phương thức mà từ
+    //         cha đã có.
+    //         - Trong đó có: 
+    //         + extends là từ khóa làm cho con thừa kế được từ cha
+    //         + super: dùng để kế thừa những phương thức từ cha
+    //     */
+
+    //     constructor(name,age,gender,phone,email) {
+    //         super(name,age,gender);
+    //         this.phone = phone;
+    //         this.email = email;
+    //     }
+    //     /*
+    //     2: Đa hình: là thực hiện một phương thức bằng nhiều cách khác nhau
+    //     -Thực hiện bằng cách ghi đè phương thức
+    //     (Ví dụ bên dưới talk() ).
+    //     */
+    //     talk() {
+    //         console.log("Chào mọi người");
+    //     }
+        
+    // }
+
+    // const Con1 = new Person2("Khiem","20","Nam","03499434","khiem@gmail.com");
+    // Con1.talk();
+    // console.log(Con1);
+
+    // class Animal {
+    //     #name
+    //     constructor(name) {
+    //         this.#name = name;
+    //     }
+    //     getName() {
+    //         return console.log(this.#name);
+    //     }
+    // }
+
+    // const cat = new Animal("Cat");
+    // cat.getName();
+
+    class Calcu {
+        static value = 0;
+
+        static plus(number) {
+            this.value += number;
+            return this;
+        }
+
+        static multi(number) {
+            this.value *= number;
+            return this;
+        }
+        static getValue() {
+            return this.value;
+        }
+    }
+
+    const result = Calcu.plus(2).multi(6).getValue();
+    console.log(result);
+  
+</script>
+</html>
