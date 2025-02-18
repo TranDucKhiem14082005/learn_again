@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_simple",
+  "version": "1.0.0",
+  "description": "this is project demo for class 02",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
